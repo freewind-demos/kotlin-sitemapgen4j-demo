@@ -2,8 +2,6 @@ buildscript {
     ext.kotlin_version = '1.2.60'
     repositories {
         mavenLocal()
-        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
-        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
         jcenter()
     }
     dependencies {
@@ -15,13 +13,12 @@ apply plugin: 'kotlin'
 
 repositories {
     mavenLocal()
-    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
-    maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
     jcenter()
 }
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile 'com.github.dfabulich:sitemapgen4j:1.1.1'
     compile "org.apache.commons:commons-lang3:3.7"
     compile "commons-io:commons-io:2.6"
     testCompile "junit:junit:4.11"
@@ -29,5 +26,3 @@ dependencies {
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
 }
 
-// gradle wrapper --gradle-version 4.8.1
-// ./gradlew -version

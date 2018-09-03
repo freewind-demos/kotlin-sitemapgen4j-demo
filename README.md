@@ -1,4 +1,6 @@
-Kotlin Hello World Demo
-=======================
+Kotlin Sitemapgen4j Demo
+========================
 
-Hello world from kotlin. Open it in IDE and run `Hello.kt`
+生成一个站点地图。
+
+Run `Hello.kt` in your IDE, then check the `generated` directory.
